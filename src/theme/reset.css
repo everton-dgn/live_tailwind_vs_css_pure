@@ -38,8 +38,8 @@ body {
   width: 100%;
   min-height: 100vh;
   justify-content: flex-start;
-  background: radial-gradient(var(--color-primary), var(--color-secondary));
-  color: var(--color-white);
+  background-color: var(--color-white);
+  color: var(--color-primary);
   isolation: isolate;
 }
 
