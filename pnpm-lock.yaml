@@ -11,7 +11,7 @@ importers:
       '@astrojs/svelte':
         specifier: 7.0.9
         version: 7.0.9(@types/node@22.13.8)(astro@5.5.6(@types/node@22.13.8)(jiti@2.4.2)(rollup@4.34.8)(typescript@5.8.2)(yaml@2.7.0))(jiti@2.4.2)(svelte@5.25.6)(typescript@5.8.2)(yaml@2.7.0)
-      '@fontsource/inter':
+      '@fontsource/manrope':
         specifier: 5.2.5
         version: 5.2.5
       astro:
@@ -45,6 +45,9 @@ importers:
       '@iconify-json/heroicons':
         specifier: 1.2.2
         version: 1.2.2
+      '@iconify-json/lucide':
+        specifier: ^1.2.34
+        version: 1.2.34
       '@types/jsdom-global':
         specifier: 3.0.7
         version: 3.0.7
@@ -730,8 +733,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@fontsource/inter@5.2.5':
-    resolution: {integrity: sha512-kbsPKj0S4p44JdYRFiW78Td8Ge2sBVxi/PIBwmih+RpSXUdvS9nbs1HIiuUSPtRMi14CqLEZ/fbk7dj7vni1Sg==}
+  '@fontsource/manrope@5.2.5':
+    resolution: {integrity: sha512-4mYUAhsuF8KoXseG8T9woWUc/foznUVluFtE6fCKAqe76WM3kmDNedaINWjzWB73+wly0duFvVpDBma3NXXT0g==}
 
   '@fullhuman/postcss-purgecss@7.0.2':
     resolution: {integrity: sha512-U4zAXNaVztbDxO9EdcLp51F3UxxYsb/7DN89rFxFJhfk2Wua2pvw2Kf3HdspbPhW/wpHjSjsxWYoIlbTgRSjbQ==}
@@ -740,6 +743,9 @@ packages:
 
   '@iconify-json/heroicons@1.2.2':
     resolution: {integrity: sha512-qoW4pXr5kTTL6juEjgTs83OJIwpePu7q1tdtKVEdj+i0zyyVHgg/dd9grsXJQnpTpBt6/VwNjrXBvFjRsKPENg==}
+
+  '@iconify-json/lucide@1.2.34':
+    resolution: {integrity: sha512-6xiITvlYP/5d6KQPRBHDQ+eaLxRWiTvXfuVGuNX2ahNLbEi0VKB04v008IQLPrMu/C4tRMI4+sRzHd/wSFxGZQ==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -4125,7 +4131,7 @@ snapshots:
   '@esbuild/win32-x64@0.25.0':
     optional: true
 
-  '@fontsource/inter@5.2.5': {}
+  '@fontsource/manrope@5.2.5': {}
 
   '@fullhuman/postcss-purgecss@7.0.2(postcss@8.5.3)':
     dependencies:
@@ -4133,6 +4139,10 @@ snapshots:
       purgecss: 7.0.2
 
   '@iconify-json/heroicons@1.2.2':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/lucide@1.2.34':
     dependencies:
       '@iconify/types': 2.0.0
 

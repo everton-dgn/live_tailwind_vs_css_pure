@@ -38,8 +38,6 @@ body {
   width: 100%;
   min-height: 100vh;
   justify-content: flex-start;
-  background-color: var(--color-white);
-  color: var(--color-primary);
   isolation: isolate;
 }
 
@@ -58,6 +56,7 @@ strong {
   font-weight: bolder;
 }
 
+/*noinspection ALL*/
 optgroup,
 body,
 input,
@@ -114,19 +113,25 @@ mark {
   }
 }
 
+/*noinspection ALL*/
 ::-webkit-scrollbar,
 scrollbar-width {
   width: 16px !important;
-  background-color: var(--color-white);
+  background-color: hsla(0, 0%, 100%, 0.3);
 }
 
 ::-webkit-scrollbar-thumb {
-  border: 3px solid var(--color-white);
   border-radius: 20px;
-  background-color: var(--color-gray);
+  background-color: var(--essential-subdued);
 }
 
+/*noinspection ALL*/
 :root {
-  scrollbar-color: var(--color-gray) var(--color-white) !important;
+  scrollbar-color: var(--essential-subdued) hsla(0, 0%, 100%, 0.3) !important;
   scrollbar-width: 16px !important;
+}
+
+html {
+  scrollbar-color: hsla(0, 0%, 100%, 0.3) transparent;
+  scrollbar-width: auto;
 }
