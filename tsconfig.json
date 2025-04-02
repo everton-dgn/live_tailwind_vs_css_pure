@@ -7,7 +7,11 @@
     "esModuleInterop": true,
     "jsx": "preserve",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "plugins": [{ "name": "@astrojs/ts-plugin" }],
+    "plugins": [
+      {
+        "name": "@astrojs/ts-plugin"
+      }
+    ],
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
@@ -31,12 +35,7 @@
     "declaration": true,
     "skipLibCheck": true,
     "incremental": true,
-    "types": [
-      "vitest/globals",
-      "astro/client",
-      "@testing-library/jest-dom",
-      "unplugin-icons/types/astro"
-    ]
+    "types": ["astro/client", "unplugin-icons/types/astro"]
   },
   "include": [
     "src/**/*.ts",
@@ -44,7 +43,6 @@
     "src/**/*.astro",
     "src/**/*.svelte.ts",
     "src/**/*.svelte",
-    "./vitest.setup.ts",
     "src/@types/**/*.d.ts",
     ".astro/types.d.ts"
   ],
