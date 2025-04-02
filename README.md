@@ -1,8 +1,8 @@
 <div align="center">
 
-<a href="./LICENSE">![GitHub](https://img.shields.io/github/license/everton-dgn/boilerplate_astro_svelte?style=plastic)</a>
-![GitHub repo size](https://img.shields.io/github/repo-size/everton-dgn/boilerplate_astro_svelte?style=plastic)
-![GitHub Repo stars](https://img.shields.io/github/stars/everton-dgn/boilerplate_astro_svelte?color=yellow&style=plastic)
+<a href="./LICENSE">![GitHub](https://img.shields.io/github/license/everton-dgn/live_tailwind_vs_css_pure?style=plastic)</a>
+![GitHub repo size](https://img.shields.io/github/repo-size/everton-dgn/live_tailwind_vs_css_pure?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/everton-dgn/live_tailwind_vs_css_pure?color=yellow&style=plastic)
 
 </div>
 
@@ -94,7 +94,7 @@ In addition to being constantly updated, this project was configured in the smal
 ## Clone Repository
 
 ```bash
-git clone https://github.com/everton-dgn/boilerplate_astro_svelte.git
+git clone https://github.com/everton-dgn/live_tailwind_vs_css_pure.git
 ```
 
 ## Install Dependencies
