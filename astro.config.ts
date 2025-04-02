@@ -5,13 +5,14 @@ import Icons from 'unplugin-icons/vite'
 
 export default defineConfig({
   experimental: {
-    serializeConfig: true
+    serializeConfig: true,
+    svg: true
   },
-  trailingSlash: 'always',
   publicDir: 'public',
   // site: 'https://example.com',
   prefetch: {
-    prefetchAll: false
+    prefetchAll: true,
+    defaultStrategy: 'hover'
   },
   vite: {
     plugins: [
