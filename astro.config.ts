@@ -1,11 +1,11 @@
 import { defineConfig } from 'astro/config'
 
 import svelte from '@astrojs/svelte'
+import Icons from 'unplugin-icons/vite'
 
 export default defineConfig({
   experimental: {
-    serializeConfig: true,
-    svg: true
+    serializeConfig: true
   },
   trailingSlash: 'always',
   publicDir: 'public',
@@ -14,6 +14,12 @@ export default defineConfig({
     prefetchAll: false
   },
   vite: {
+    plugins: [
+      Icons({
+        compiler: 'svelte',
+        autoInstall: true
+      })
+    ],
     optimizeDeps: {
       exclude: ['fsevents']
     }
