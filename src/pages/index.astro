@@ -1,11 +1,43 @@
 ---
-// import IconSearch from '~icons/lucide/search'
-
+import Logo from 'assets/logo/logo.svg'
 import RootLayout from 'components/layouts/RootLayout/RootLayout.astro'
+import IconDownload from '~icons/lucide/download'
+import IconHome from '~icons/lucide/home'
+import IconSearch from '~icons/lucide/search'
 import S from './_styles.module.css'
 ---
 
 <RootLayout title="Live" description="TailwindCSS vs CSS Pure">
   <div class={S.container}>
+    <header class={S.header}>
+      <Logo class={S.logo} />
+      <div class={S.center_topbar}>
+        <button class={S.btn_home}>
+          <IconHome width={24} height={24} />
+        </button>
+        <div class={S.wrapper_input}>
+          <button class={S.btn_icon}>
+            <IconSearch width={24} height={24} />
+          </button>
+          <input class={S.input} placeholder="O que você quer ouvir?" />
+        </div>
+      </div>
+      <div class={S.right_topbar}>
+        <a href="/">Premium</a>
+        <a href="/">Suporte</a>
+        <a href="/">Baixar</a>
+        <span class={S.separator_y}></span>
+        <button class={S.btn_topbar}>
+          <IconDownload width={16} height={16} />
+          Instalar aplicativo
+        </button>
+        <button class={S.btn_topbar}>
+          Inscreva-se
+        </button>
+        <button class={S.btn_primary}>
+          Entrar
+        </button>
+      </div>
+    </header>
   </div>
 </RootLayout>

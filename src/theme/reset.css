@@ -39,6 +39,8 @@ body {
   min-height: 100vh;
   justify-content: flex-start;
   isolation: isolate;
+  background-color: var(--bg-base);
+  color: var(--text-base);
 }
 
 p,
@@ -81,12 +83,12 @@ a:active {
 }
 
 :focus {
-  outline: 4px solid var(--color-focus);
+  /*outline: 4px solid var(--color-focus);*/
   outline-offset: 1px;
 }
 
 :focus-visible {
-  outline: 4px solid var(--color-focus);
+  /*outline: 4px solid var(--color-focus);*/
   outline-offset: 1px;
 }
 

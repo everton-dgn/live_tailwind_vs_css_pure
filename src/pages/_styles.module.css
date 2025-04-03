@@ -1,3 +1,125 @@
 .container {
   display: flex;
+  height: 100%;
+  max-height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  padding: 8px;
+  gap: 8px;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  margin-left: 20px;
+}
+
+.center_topbar {
+  display: flex;
+  width: 474px;
+  align-items: center;
+  margin-left: auto;
+  gap: 8px;
+}
+
+.btn_home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  background-color: var(--bg-highlight);
+  color: var(--text-subdued);
+}
+
+.wrapper_input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 474px;
+  height: 48px;
+  background-color: var(--bg-highlight);
+  border-radius: 60px;
+  padding-inline: 8px;
+}
+
+.input {
+  display: flex;
+  height: 100%;
+  background-color: transparent;
+  color: var(--text-subdued);
+  font-weight: 400;
+  font-size: 16px;
+  border: 0;
+  border-radius: 60px;
+}
+
+.btn_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  background-color: var(--bg-highlight);
+  color: var(--text-subdued);
+}
+
+.right_topbar {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 100%;
+  gap: 8px;
+  margin-left: 100px;
+
+  a {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-subdued);
+  }
+}
+
+.separator_y {
+  width: 1px;
+  height: 25px;
+  background-color: var(--decorative-base);
+  margin-inline: 16px;
+}
+
+.btn_topbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  font-size: 14px;
+  font-weight: 700;
+  border: 0;
+  color: var(--text-subdued);
+  background-color: transparent;
+  gap: 8px;
+  padding: 0 16px;
+}
+
+.btn_primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: 48px;
+  padding: 8px 32px;
+  border: 0;
+  color: var(--text-black);
+  background-color: var(--decorative-base);
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 60px;
 }
